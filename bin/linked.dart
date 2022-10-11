@@ -7,11 +7,11 @@ class Node {
   Node({required this.data});
 }
 
-class SinglyLinkedList {
+class LinkedList {
   Node? head;
   Node? tail;
 
-  // add to SINGLY linked list
+  // add to singly linked list
   void addNode(int data) {
     Node newNode = Node(data: data);
     if (head == null) {
@@ -44,7 +44,7 @@ class SinglyLinkedList {
     print("===============");
     print("Linked list: ");
     while (temp != null) {
-      stdout.write("${temp.data}  ");
+     stdout.write("${temp.data}  ");
       temp = temp.next;
     }
     print("\n===============");
@@ -64,7 +64,7 @@ class SinglyLinkedList {
     }
   }
 
-  // delete Node
+  // delete Node from linked list
   void deleteNode(data) {
     Node? temp = head;
     Node? prev;
@@ -86,7 +86,7 @@ class SinglyLinkedList {
     prev!.next = temp!.next;
   }
 
-  // insert after Node in doubly
+  // insert after Node in doubly linked list
   void insertAfter(int nextTo, int data) {
     Node newNode = Node(data: data);
     Node? temp = head;
@@ -105,7 +105,7 @@ class SinglyLinkedList {
     temp.next = newNode;
   }
 
-  // insert before in dobly
+  // insert before in doubly linked list
   void insertBefore(int beforeTo, int data) {
     Node newNode = Node(data: data);
     Node? temp = head;
@@ -133,7 +133,7 @@ class SinglyLinkedList {
     head = newNode;
   }
 
-  // reversed linked list
+  // to reverse linked list
   void reverse() {
     Node? current = head;
     Node? nextNode;

@@ -9,7 +9,7 @@ class Node {
 class Stack {
   Node? top;
 
-  // add to STACK list
+  // add to stack
   void push(int data) {
     Node newNode = Node(data: data);
     if (top == null) {
@@ -20,7 +20,7 @@ class Stack {
     }
   }
 
-  // display StackList
+  // display stack
   void display() {
     if (top == null) {
       print("stack is empty");
