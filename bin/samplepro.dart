@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'string.dart';
 import 'tree.dart';
 import 'linked.dart';
 import 'stack.dart';
@@ -12,6 +13,11 @@ void main() {
   Queue queue = Queue();
   Sort sort = Sort();
   BinarySearchTree tree = BinarySearchTree();
+  Strings string = Strings();
+
+  //****  string operations =======
+  final String abc = 'abc';
+  print(string.change(abc, 2));
 
   //****  tree operations =======
   tree.insertNode(10);
