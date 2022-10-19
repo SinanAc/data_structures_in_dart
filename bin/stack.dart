@@ -27,7 +27,7 @@ class Stack {
       return;
     }
     Node? temp = top;
-    print("===============");
+    print("\n===============");
     print("stack list: ");
     while (temp != null) {
       stdout.write("${temp.data}  ");

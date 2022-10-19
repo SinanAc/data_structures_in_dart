@@ -41,8 +41,8 @@ class LinkedList {
       return;
     }
     Node? temp = head;
-    print("===============");
-    print("Linked list: ");
+    print("\n===============");
+    print("\nLinked list: ");
     while (temp != null) {
      stdout.write("${temp.data}  ");
       temp = temp.next;
@@ -57,11 +57,13 @@ class LinkedList {
       return;
     }
     Node? temp = tail;
-    print("Nodes of doubly linked list: ");
+    print("\n===============");
+    print("\nNodes of doubly linked list: ");
     while (temp != null) {
       stdout.write("${temp.data}  ");
       temp = temp.prev;
     }
+    print("\n===============");
   }
 
   // delete Node from linked list
