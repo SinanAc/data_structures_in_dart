@@ -6,8 +6,7 @@ import 'sort.dart';
 import 'stack.dart';
 import 'string.dart';
 import 'tree.dart';
-
-void main() {
+void main()async {
   // ==================== List (array) ========================
   List<int> arr = [2999, 43, 3, 678, 7, 5, 9, 34, 21, 56, 12, 78];
   // ========== END ========== //
