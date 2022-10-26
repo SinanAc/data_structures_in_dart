@@ -1,22 +1,24 @@
 import 'dart:io';
 import 'graph/graph.dart';
+import 'graph/river_graph.dart';
 import 'linked_list/linked.dart';
 import 'stack_queue/queue.dart';
 import 'sort/sort.dart';
 import 'stack_queue/stack.dart';
 import 'tree/tree.dart';
-void main()async {
+void main(){
   // ==================== List (array) ========================
   List<int> arr = [2999, 43, 3, 678, 7, 5, 9, 34, 21, 56, 12, 78];
   // ========== END ========== //
 
   // ==================== creating objects ====================
   LinkedList list = LinkedList();
-  Stack stack = Stack();
+  Stacks stack = Stacks();
   Queue queue = Queue();
   Sort sort = Sort();
   BinarySearchTree tree = BinarySearchTree();
   Graph<int> graph = Graph();
+  final RiverGraph riverGraph = RiverGraph();
 
   // ========== END ========== //
 
@@ -25,6 +27,15 @@ void main()async {
   graph.insert(3, 4, true);
   graph.insert(5, 6, false);
   graph.display();
+      final List<List<int>> matrix = [
+    [1,0,0,1,1],
+    [0,1,1,1,0],
+    [0,0,0,0,1],
+    [1,0,0,0,1]
+  ];
+  
+  final List<int> results = riverGraph.checkRiverSize(matrix);
+  print(results);
   // ========== END ========== //
 
   // ==================== tree operations =====================
@@ -63,13 +74,10 @@ void main()async {
   // ========== END ========== //
 
   // =================== Sort operations =======================
-  print("===============");
   List<int> sortedArr = sort.bubbleSort(arr);
   for (int element in sortedArr) {
     stdout.write('$element, ');
   }
-  print("\n===============");
   print(arr.length);
-  print("===============");
   //========== END ========== //
 }

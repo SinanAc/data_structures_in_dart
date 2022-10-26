@@ -6,7 +6,7 @@ class Node {
   Node({required this.data});
 }
 
-class Stack {
+class Stacks {
   Node? top;
 
   // add to stack
