@@ -1,10 +1,10 @@
 import 'dart:io';
-import 'graph.dart';
-import 'linked.dart';
-import 'queue.dart';
-import 'sort.dart';
-import 'stack.dart';
-import 'tree.dart';
+import 'graph/graph.dart';
+import 'linked_list/linked.dart';
+import 'stack_queue/queue.dart';
+import 'sort/sort.dart';
+import 'stack_queue/stack.dart';
+import 'tree/tree.dart';
 void main()async {
   // ==================== List (array) ========================
   List<int> arr = [2999, 43, 3, 678, 7, 5, 9, 34, 21, 56, 12, 78];
@@ -16,7 +16,7 @@ void main()async {
   Queue queue = Queue();
   Sort sort = Sort();
   BinarySearchTree tree = BinarySearchTree();
-  Graph graph = Graph();
+  Graph<int> graph = Graph();
 
   // ========== END ========== //
 

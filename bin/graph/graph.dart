@@ -1,16 +1,16 @@
 import 'dart:collection';
 import 'dart:io';
 
-class Graph{
+class Graph<T>{
   // variables
-  List<int>?_arrayList;
-  final Map<int,List<int>> _maps = HashMap();
+  List<T>?_arrayList;
+  final Map<T,List<T>> _maps = HashMap();
   // add to vertext method
-  void _addVertex(int data){
+  void _addVertex(T data){
     _maps.addAll({data:_arrayList??[]});
   }
   // insert method
-  void insert(int vertex, int edge, bool isBiDirectional){
+  void insert(T vertex, T edge, bool isBiDirectional){
     if(!_maps.containsKey(vertex)){
       _addVertex(vertex);
     }
