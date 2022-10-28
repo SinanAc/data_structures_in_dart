@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'graph/graph.dart';
-import 'graph/river_graph.dart';
 import 'linked_list/linked.dart';
 import 'stack_queue/queue.dart';
 import 'sort/sort.dart';
@@ -18,7 +17,6 @@ void main() {
   Sort sort = Sort();
   BinarySearchTree tree = BinarySearchTree();
   Graph<int> graph = Graph();
-  final RiverGraph riverGraph = RiverGraph();
 
   // ========== END ========== //
 
@@ -26,16 +24,7 @@ void main() {
   graph.insert(3, 5, true);
   graph.insert(3, 4, true);
   graph.insert(5, 6, false);
-  graph.display();
-      final List<List<int>> matrix = [
-    [1,0,0,1,1],
-    [0,1,1,1,0],
-    [0,0,0,0,1],
-    [1,0,0,0,1]
-  ];
-  
-  final List<int> results = riverGraph.checkRiverSize(matrix);
-  print(results);
+  graph.display(); 
   // ========== END ========== //
 
   // ==================== tree operations =====================
