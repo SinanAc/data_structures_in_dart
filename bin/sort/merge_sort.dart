@@ -15,22 +15,21 @@ class MergeSort {
   }
 
   static List<int> _joinArray(List<int> firstHalf, List<int> lastHalf) {
-    final List<int> newArray = List.generate(firstHalf.length+lastHalf.length, (index) => 0);
+    final List<int> newArray = [];
     int i = 0;
     int j = 0;
-    int k = 0;
     while (i < firstHalf.length && j < lastHalf.length) {
       if (firstHalf[i] <= lastHalf[j]) {
-        newArray[k++] = firstHalf[i++];
+        newArray.add(firstHalf[i++]);
       } else {
-        newArray[k++] = lastHalf[j++];
+        newArray.add(lastHalf[j++]);
       }
     }
     while (i < firstHalf.length) {
-      newArray[k++] = firstHalf[i++];
+       newArray.add(firstHalf[i++]);
     }
     while (j < lastHalf.length) {
-      newArray[k++] = lastHalf[j++];
+      newArray.add(lastHalf[j++]);
     }
     return newArray;
   }
