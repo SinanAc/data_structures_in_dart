@@ -7,7 +7,7 @@ class Node {
 
 class BinarySearchTree {
   Node? root;
-  // insert to tree
+  // -->> insert to tree
   void insertNode(int data) {
     Node? currentNode = root;
     if (currentNode == null) {
@@ -33,7 +33,7 @@ class BinarySearchTree {
     }
   }
 
-  // function to check is data contains in the tree or not
+  // ====>>> function to check is data contains in the tree or not
   bool isContains(int data) {
     Node? currentNode = root;
     while (currentNode != null) {
@@ -48,12 +48,12 @@ class BinarySearchTree {
     return false;
   }
 
-  // function to remove an element from tree (recursive method)
+  // ====>>> function to remove an element from tree (recursive method)
   void removeFromTree(int data) {
     _removeHelper(data, root, null);
   }
 
-  // recursive helper function to run remove function
+  // ====>>> recursive helper function to run remove function
   void _removeHelper(int data, Node? currentNode, Node? parrentNode) {
     while (currentNode != null) {
       if (data < currentNode.data) {
@@ -94,7 +94,7 @@ class BinarySearchTree {
     }
   }
 
-  // get minimum value to replace removed value
+  // ====>>> get minimum value to replace removed value
   int getMinValue(Node? currentNode) {
     if (currentNode?.left == null) {
       return currentNode!.data;
@@ -139,9 +139,9 @@ class BinarySearchTree {
       print(node.data);
     }
   }
-  // end of traverse methods <<=======//
+  // ====>>> end of traverse methods <<=======//
 
-  // print root value of tree
+  // ====>>> print root value of tree
   void printRoot() {
     print("===============");
     if (root == null) {

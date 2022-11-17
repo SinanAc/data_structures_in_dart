@@ -11,7 +11,7 @@ class LinkedList {
   Node? head;
   Node? tail;
 
-  // add to singly linked list
+  // ====>>> add to singly linked list
   void addNode(int data) {
     Node newNode = Node(data: data);
     if (head == null) {
@@ -22,7 +22,7 @@ class LinkedList {
     tail = newNode;
   }
 
-  // add to doubly linked list
+  // ====>>> add to doubly linked list
   void addDoublyNode(int data) {
     Node newNode = Node(data: data);
     if (head == null) {
@@ -34,7 +34,7 @@ class LinkedList {
     tail = newNode;
   }
 
-  // display singly linked list
+  // ====>>> display singly linked list
   void display() {
     if (head == null) {
       print("List is empty");
@@ -50,7 +50,7 @@ class LinkedList {
     print("\n===============");
   }
 
-  // display doubly linked list
+  // ====>>> display doubly linked list
   void displayDoublyReverse() {
     if (tail == null) {
       print("List is empty");
@@ -66,7 +66,7 @@ class LinkedList {
     print("\n===============");
   }
 
-  // delete Node from linked list
+  // ====>>> delete Node from linked list
   void deleteNode(data) {
     Node? temp = head;
     Node? prev;
@@ -88,7 +88,7 @@ class LinkedList {
     prev!.next = temp!.next;
   }
 
-  // insert after Node in doubly linked list
+  // ====>>> insert after Node in doubly linked list
   void insertAfter(int nextTo, int data) {
     Node newNode = Node(data: data);
     Node? temp = head;
@@ -107,7 +107,7 @@ class LinkedList {
     temp.next = newNode;
   }
 
-  // insert before in doubly linked list
+  // ====>>> insert before in doubly linked list
   void insertBefore(int beforeTo, int data) {
     Node newNode = Node(data: data);
     Node? temp = head;
@@ -128,14 +128,14 @@ class LinkedList {
     temp.prev = newNode;
   }
 
-  // add a new node to the first position
+  // ====>>> add a new node to the first position
   void addAtFirst(data) {
     Node newNode = Node(data: data);
     newNode.next = head;
     head = newNode;
   }
 
-  // to reverse linked list
+  // ====>>> to reverse linked list
   void reverse() {
     Node? current = head;
     Node? nextNode;
@@ -149,7 +149,7 @@ class LinkedList {
     head = prev;
   }
 
-  // print head of linked list
+  // ====>>> print head of linked list
   void printHead() {
     print("===============");
     if (head ==null){
@@ -160,7 +160,7 @@ class LinkedList {
     print("===============");
   }
 
-  // print tail of linked list
+  // ====>>> print tail of linked list
   void printTail() {
     print("===============");
     if (tail ==null){
