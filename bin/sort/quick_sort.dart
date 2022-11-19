@@ -5,11 +5,13 @@ void main() {
 }
 
 class QuickSort {
+  // ====>>> quick sort function
   static List<int> quickSort(List<int> arr) {
     quickSortHelper(arr, 0, arr.length-1);    
     return arr;
   }
 
+  // ====>>> helper method
   static void quickSortHelper(List<int> arr, int startIdx, int endIdx) {
     if (startIdx >= endIdx) {
       return;
@@ -36,6 +38,7 @@ class QuickSort {
     quickSortHelper(arr, rightIdx+1, endIdx);
   }
 
+  // ====>>> to swap values
   static void swap(List<int> arr, int i, int j) {
     int temp = arr[i];
     arr[i] = arr[j];
