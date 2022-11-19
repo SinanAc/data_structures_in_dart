@@ -4,6 +4,7 @@ void main() {
 }
 
 class MergeSort {
+  // ====>>> merge array function
   static List<int> mergeSort(List<int> array) {
     if (array.length <= 1) {
       return array;
@@ -14,6 +15,7 @@ class MergeSort {
     return _joinArray(mergeSort(firstHalf), mergeSort(lastHalf));
   }
 
+  // ====>>> to join the arrays
   static List<int> _joinArray(List<int> firstHalf, List<int> lastHalf) {
     final List<int> newArray = [];
     int i = 0;
