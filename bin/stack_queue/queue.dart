@@ -22,7 +22,7 @@ class Queue {
     }
   }
 
-  // remove from Queue list
+  // ====>>> remove from Queue list
   void dequeue() {
     if (front == null) {
       print('No data');
@@ -34,7 +34,7 @@ class Queue {
     }
   }
 
-  // display Queue list
+  // ====>>> display Queue list
   void display() {
     if (front == null) {
       print("stack is empty");
