@@ -7,7 +7,7 @@ class Node {
 
 class BinarySearchTree {
   Node? root;
-  // -->> insert to tree
+  // ====>>> insert to tree
   void insertNode(int data) {
     Node? currentNode = root;
     if (currentNode == null) {
@@ -139,7 +139,6 @@ class BinarySearchTree {
       print(node.data);
     }
   }
-  // ====>>> end of traverse methods <<=======//
 
   // ====>>> print root value of tree
   void printRoot() {
