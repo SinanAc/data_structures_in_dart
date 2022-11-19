@@ -29,6 +29,5 @@ class Graph<T>{
     stdout.write("$value ");
    print('');
    });
-  
   }
 }
